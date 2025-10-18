@@ -1,0 +1,11 @@
+:root {
+  --primary-dark: #003049;
+  --primary: #00A6FB;
+  --primary-light: #90E0EF;
+  --accent: #00FFC5;
+  --secondary: #2A6478;
+  --text-light: #ffffff;
+  --text-dark: #003049;
+  --overlay: rgba(0, 48, 73, 0.7);
+  --gradient: linear-gradient(to bottom, var(--primary-dark), var(--secondary));
+}

@@ -1,0 +1,255 @@
+/* Base header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--gradient);
+ 
+    position: relative;
+    flex-wrap: wrap;
+    height: 100px;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    height: 100%;
+  }
+  
+  /* Logo styles */
+  .logo {
+    height: 80px;
+    object-fit: contain;
+
+  }
+ 
+  /* Navigation for large screens */
+  .btn {
+    display: none;
+  gap: 1.8rem;
+  margin-right: 2rem;
+  font-style: none;
+  }
+  
+  .btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+  
+  .btn a:hover {
+    background-color: red;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  /* Hamburger (mobile only) */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
+    left: 1.0rem;
+  }
+  
+  .hamburger img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Sidebar (mobile nav) */
+  .sidebar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    background: var(--gradient);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    display: none;
+    flex-direction: column;
+    padding: 2rem;
+    z-index: 10;
+  }
+  
+  .sidebar.open {
+    display: flex;
+  }
+  
+  .close-btn {
+    width: 24px;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .sidebar-nav li {
+    margin-bottom: 1.5rem;
+  }
+  
+  .sidebar-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .sidebar-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* New navigation link styles */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: 4rem;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+  color: var(--primary-light);
+}
+
+.nav-button-sidebar {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+.nav-button-sidebar::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-button-sidebar:hover::after {
+  width: 100%;
+}
+  
+  /* Responsive styles */
+  @media (min-width: 768px) {
+    .header {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--gradient);
+    height: 100px;
+  }
+
+  .logo-container {
+    padding-left: 0;
+    margin-right: auto;
+  }
+
+  .logo {
+    height: 80px;
+    transition: transform 0.3s ease;
+  }
+
+  .logo:hover {
+    transform: scale(1.05);
+  }
+
+  .nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .nav-button {
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .nav-button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--accent);
+    transition: all 0.3s ease;
+  }
+
+  .nav-button:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .sidebar {
+    display: none !important;
+  }
+  }
+  
+  @media (max-width: 767px) {
+  .header {
+    justify-content: center;
+    padding: 0.5rem;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  }

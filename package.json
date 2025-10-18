@@ -1,0 +1,15 @@
+{
+  "name": "hydra-school-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev -w hydra-school-backend",
+    "start:backend": "npm start -w hydra-school-backend",
+    "dev:frontend": "npm start -w hydra-school",
+    "build:frontend": "npm run build -w hydra-school"
+  }
+}
+
