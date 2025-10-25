@@ -1,0 +1,106 @@
+/* Global theme tokens (used by multiple CSS Modules) */
+:root {
+  /* Synced with frontend/src/styles/colors.css */
+  --primary-dark: #003049;
+  --primary: #00A6FB;
+  --primary-light: #90E0EF;
+  --accent: #00FFC5;
+  --secondary: #2A6478;
+  --text-light: #ffffff;
+  --text-dark: #003049;
+  --overlay: rgba(0, 48, 73, 0.7);
+  --gradient: linear-gradient(to bottom, var(--primary-dark), var(--secondary));
+}
+
+/* Minimal global resets */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #111;
+  background: #fff;
+}
+a { color: inherit; text-decoration: none; }
+img, video { max-width: 100%; height: auto; display: block; }
+button { cursor: pointer; }
+
+/* Utility layout containers that existing components expect */
+.home-container, .page-container { min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
+
+/* Language switcher minimal styles */
+.language-switcher { display: flex; gap: 0.5rem; align-items: center; }
+.lang-btn { background: transparent; border: 1px solid #ccc; padding: 0.25rem; border-radius: 6px; }
+.lang-btn.active { border-color: #111; }
+.flag-icon { width: 24px; height: 24px; }
+
+/* Global classes referenced by components without CSS modules */
+.hero-button {
+  background-color: var(--accent);
+  color: var(--text-dark);
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.hero-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-light);
+}
+
+.course-card-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Hide scrollbar on mobile (default) */
+.course-card-list::-webkit-scrollbar { display: none; }
+
+@media (min-width: 768px) {
+  /* Show a visible scrollbar on desktop */
+  .course-card-list { padding-bottom: 0.5rem; scrollbar-width: thin; }
+  .course-card-list::-webkit-scrollbar { display: initial; height: 8px; }
+  .course-card-list::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.08); border-radius: 8px; }
+  .course-card-list::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.35); border-radius: 8px; }
+  .course-card-list::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.5); }
+}
+
+/* Swipe hint (mobile only) */
+.swipe-hint {
+  display: block;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  margin: 0.25rem 0 0.5rem;
+}
+.swipe-hint .swipe-arrow {
+  display: inline-block;
+  margin-left: 0.25rem;
+  animation: nudgeRight 1.2s ease-in-out infinite;
+}
+
+@keyframes nudgeRight {
+  0%, 100% { transform: translateX(0); opacity: 0.6; }
+  50% { transform: translateX(6px); opacity: 1; }
+}
+
+@media (min-width: 768px) {
+  .swipe-hint { display: none; }
+}

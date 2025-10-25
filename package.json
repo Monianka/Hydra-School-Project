@@ -6,10 +6,11 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:backend": "npm run dev -w hydra-school-backend",
-    "start:backend": "npm start -w hydra-school-backend",
-    "dev:frontend": "npm start -w hydra-school",
-    "build:frontend": "npm run build -w hydra-school"
+    "dev:web": "npm run dev -w web",
+    "build:web": "npm run build -w web",
+    "start:web": "npm run start -w web",
+    "dev:backend": "npm run dev -w packages/backend",
+    "start:backend": "npm start -w packages/backend",
+    "lint": "npm run lint -w web || true"
   }
 }
-
