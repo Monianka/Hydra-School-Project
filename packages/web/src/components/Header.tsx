@@ -73,6 +73,9 @@ const Header: React.FC<{}> = () => {
         >
           {t.about}
         </button>
+        <button className={styles["nav-button"]} onClick ={()=>handleNavigation("/aboutus")}>
+{t.about}
+        </button>
       </nav>
 
       <div className={styles.hamburger} onClick={toggleSidebar}>
