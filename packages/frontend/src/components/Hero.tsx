@@ -6,7 +6,9 @@ import instagramIcon from "../assets/icons/1161953_instagram_icon(2).png";
 import youtubeIcon from "../assets/icons/211929_social_youtube_icon.png";
 import pin from "../assets/icons/icons8-address-50.png";
 
-interface HeroSectionProps {}
+interface HeroSectionProps {
+  
+}
 
 const HeroSection: React.FC<HeroSectionProps> = () => {
   const scrollToCourses = () => {

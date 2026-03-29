@@ -1,0 +1,297 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay);
+  display: block;
+  padding-top: 2rem;
+  overflow-y: auto;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.course-detail-page {
+  background: var(--gradient);
+  color: var(--text-light);
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+.modal-content {
+  background: var(--gradient);
+  color: var(--text-light);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  max-width: 800px;
+  width: 75%;
+  margin: 0 auto; /* Center the content horizontally */
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.modal-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-light);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.modal-close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+.modal-section {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.modal-section:hover {
+  transform: translateY(-2px);
+}
+
+.modal-section h2 {
+  color: var(--primary-light);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-section h3 {
+  color: var(--accent);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-section p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.course-modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.btn-book,
+.btn-call {
+  padding: 1rem 1rem !important;  
+  border-radius: 2rem;
+  border: none;
+  font-size: 0.8rem !important ;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-book {
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+}
+
+.btn-call {
+  background-color: var(--accent);
+  color: var(--text-dark);
+}
+
+.btn-book:hover,
+.btn-call:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .modal-overlay {
+    top: 0; /* Changed from 10rem to 0 */
+    left: 0;
+    right: 0;
+    margin: auto; /* Changed margin properties to just auto */
+    width: 100%; /* Changed from 60% to 100% */
+    height: 100%; /* Changed from 50% to 100% */
+  }
+  
+  .modal-content {
+    width: 80%;
+    max-width: 800px;
+  }
+}
+
+.modal-section h2,
+.modal-section h3 {
+  color: var(--primary-white);
+  text-decoration: underline;
+}
+
+.modal-section p {
+  color: var(--text-light);
+}
+
+/* ── Course Detail Page sections grid ── */
+.course-detail-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .course-detail-sections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.course-detail-block {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--accent);
+  border-radius: 0.75rem;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.course-detail-block-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: rgba(0, 255, 197, 0.12);
+  color: var(--accent);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.course-detail-block h3 {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.course-detail-block p {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.course-detail-block ul {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.course-detail-block li {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.course-detail-block li:last-child {
+  border-bottom: none;
+}
+
+/* ── Why Dive With Us footer ── */
+.course-why-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+  /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
+  text-align: center;
+}
+
+.course-why-title {
+  color: var(--text-light);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.3px;
+}
+
+.course-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+.course-why-block {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--accent);
+  border-radius: 0.75rem;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.course-why-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(0, 255, 197, 0.12);
+  color: var(--accent);
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  align-self: center;
+  margin-bottom: 0.25rem;
+}
+
+.course-why-block h3 {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.course-why-block p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0;
+}

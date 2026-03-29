@@ -2,6 +2,7 @@ import React from "react";
 import "./CourseCard.css";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations";
+import { Link } from "react-router-dom";
 
 type CourseCardProps = {
   image: string;
@@ -9,7 +10,7 @@ type CourseCardProps = {
   price?: string;
   description: string;
   onBook: () => void;
-  onViewMore: () => void;
+  slug?: string;
 };
 
 const CourseCard: React.FC<CourseCardProps> = ({
@@ -18,7 +19,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
   price,
   description,
   onBook,
-  onViewMore,
+  slug,
 }) => {
   const { language } = useLanguage();
   const t = translations[language].courses;
@@ -37,9 +38,9 @@ const CourseCard: React.FC<CourseCardProps> = ({
         <button onClick={handleCallNow} className="btn-book">
           {t.bookNow}
         </button>
-        <button onClick={onViewMore} className="btn-view-more">
-          {t.viewMore}
-        </button>
+       <Link to={`/courses/${slug}`} className="btn-view-more">
+  {t.viewMore}
+</Link>
       </div>
     </div>
   );

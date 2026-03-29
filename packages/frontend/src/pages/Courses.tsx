@@ -9,14 +9,6 @@ const Courses: React.FC = () => {
   const { language } = useLanguage();
   const [selectedCourse, setSelectedCourse] = useState<CourseType | null>(null);
   const t = translations[language].courses;
-
-  const handleViewMore = (course: CourseType) => {
-    setSelectedCourse(course);
-  };
-
-  const handleCloseModal = () => {
-    setSelectedCourse(null);
-  };
   return (
     <div>
       <h2>{t.sectionTitle}</h2>
@@ -28,21 +20,16 @@ const Courses: React.FC = () => {
         {courses.map((course) => (
           <CourseCard
             key={course.id}
+            slug={course.slug}
             image={course.image}
             title={course.translations[language].title}
             price={course.translations[language].price}
             description={course.translations[language].description}
             onBook={() => alert(t.bookingMessage)}
-            onViewMore={() => handleViewMore(course)}
+          
           />
         ))}
       </div>
-      {selectedCourse && (
-        <CourseModal
-          course={selectedCourse}
-          onClose={handleCloseModal}
-        />
-      )}
     </div>
   );
 };

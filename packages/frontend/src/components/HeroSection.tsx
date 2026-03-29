@@ -8,7 +8,19 @@ import pin from "../assets/icons/icons8-address-50.png";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations";
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  title?: string;
+  subtitle?: string;  
+  buttonLabel?: string;
+  onButtonClick?: () => void;
+};
+
+const HeroSection: React.FC<HeroSectionProps> = ({
+  title,
+  subtitle,
+  buttonLabel,
+  onButtonClick
+}) => {
   const [isLoading, setIsLoading] = useState(true);
   const { language } = useLanguage();
   const t = translations[language].hero;
@@ -17,6 +29,11 @@ const HeroSection = () => {
     const coursesSection = document.getElementById("courses");
     coursesSection?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const heroTitle = title ?? t.title;
+  const heroSubtitle = subtitle ?? t.subtitle;
+  const heroButtonLabel = buttonLabel ?? t.viewCourses;
+  const handleButtonClick = onButtonClick ?? scrollToCourses;
 
   return (
     <section className="hero-section">
@@ -34,17 +51,12 @@ const HeroSection = () => {
       </video>
       <div className="hero-overlay">
         <div className="hero-content">
-          <h1>{t.title}</h1>
+          <h1>{heroTitle}</h1>
           <p>
-            {t.subtitle}
-            <br />
-            {language === "pl" && (
-            <strong>
-              Polska szkoła nurkowania w Anglii, szkoła nurkowania w Londynie, szkoła nurkowania w Kent, kursy nurkowania po polsku, polski instruktor nurkowania.
-            </strong>)}
+            {heroSubtitle}
           </p>
-          <button className="hero-button" onClick={scrollToCourses}>
-            {t.viewCourses}
+          <button className="hero-button" onClick={handleButtonClick}>
+            {heroButtonLabel}
           </button>
         </div>
         <div className="social-icons">

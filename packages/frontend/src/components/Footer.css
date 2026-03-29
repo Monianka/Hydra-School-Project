@@ -66,6 +66,14 @@
   font-size: 0.9rem;
 }
 
+.footer-padi-logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 0.75rem;
+  opacity: 0.9;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
 @media (min-width: 768px) {
   .footer-content {
     grid-template-columns: repeat(3, 1fr);

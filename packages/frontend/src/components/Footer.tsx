@@ -4,6 +4,7 @@ import './Footer.css';
 import facbookIcon from "../assets/icons/1920524_facebook_facebook icon_logo_network_icon.png";
 import instagramIcon from "../assets/icons/1161953_instagram_icon(2).png";
 import youtubeIcon from "../assets/icons/211929_social_youtube_icon.png";
+import padiLogo from "../assets/logos/Padi_logo_no_bc_white.png";
 import { translations } from '../translations';
 
 const Footer: React.FC = () => {
@@ -45,6 +46,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="footer-bottom">
+        <img src={padiLogo} alt="PADI" className="footer-padi-logo" />
         <p>&copy; 2024 Hydra Scuba Diving School - PADI Certified Diving School in London & Kent. {t.rights}</p>
       </div>
     </footer>

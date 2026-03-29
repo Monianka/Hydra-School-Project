@@ -33,7 +33,14 @@ export const translations = {
       prerequisites: "Prerequisites",
       whatYouWillLearn: "What You Will Learn",
       howItWorks: "How the Course Works",
-      noDetails: "No additional course details available"
+      noDetails: "No additional course details available",
+      whyDiveWithUs: "Why dive with us?",
+      safety: "Safety",
+      safetyDesc: "Your safety is our top priority. All courses are conducted by certified PADI instructors with full equipment checks.",
+      experience: "Experience",
+      experienceDesc: "Years of professional diving experience and a passion for the underwater world — we bring it all to every lesson.",
+      adventure: "Adventure",
+      adventureDesc: "Every dive is a new discovery. We take you to the most beautiful dive sites in the UK and beyond."
     }
   },
   pl: {
@@ -69,7 +76,14 @@ export const translations = {
       prerequisites: "Wymagania Wstępne",
       whatYouWillLearn: "Czego Się Nauczysz",
       howItWorks: "Jak Działa Kurs",
-      noDetails: "Brak dodatkowych szczegółów kursu"
+      noDetails: "Brak dodatkowych szczegółów kursu",
+      whyDiveWithUs: "Dlaczego warto jest z nami nurkować?",
+      safety: "Bezpieczeństwo",
+      safetyDesc: "Twoje bezpieczeństwo to nasz priorytet. Wszystkie kursy prowadzone są przez certyfikowanych instruktorów PADI z pełną kontrolą sprzętu.",
+      experience: "Doświadczenie",
+      experienceDesc: "Lata profesjonalnego doświadczenia i pasja do podwodnego świata — wnosimy to wszystko do każdej lekcji.",
+      adventure: "Przygoda",
+      adventureDesc: "Każde nurkowanie to nowe odkrycie. Zabieram Cię na najpiękniejsze miejsca nurkowe w Wielkiej Brytanii i nie tylko."
     }
   }
 };

@@ -5,6 +5,7 @@ import AboutPage from '../pages/AboutPage';
 import BlogList from '../pages/BlogList';
 import BlogDetail from '../pages/BlogDetail';
 import React from 'react';
+import CourseDetail from '../pages/CourseDetail';
 
 const AppRoutes = () => {
   return (
@@ -12,6 +13,7 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<CoursesPage />} />
+        <Route path="/courses/:slug" element={<CourseDetail />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
