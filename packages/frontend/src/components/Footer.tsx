@@ -17,9 +17,9 @@ const Footer: React.FC = () => {
         <div className="footer-section">
           <h3>{t.contact}</h3>
           <p>Phone: +447414724401</p>
-          <p>Address: 17 Alkerden Ln, Swanscombe DA10 0EQ</p>
+          <p>Address: 95 Colyer Drive, Alkerden, Swanscombe DA10 1GT</p>
           <p>Serving London, Kent and surrounding areas</p>
-          <p>Polish/English Speaking Staff (Obsługa po polsku)</p>
+          <p>Polish/English Speaking Staff</p>
         </div>
         
         <div className="footer-section">

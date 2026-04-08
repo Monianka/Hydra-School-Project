@@ -5,7 +5,6 @@
     align-items: center;
     padding: 1rem;
     background: var(--gradient);
- 
     position: relative;
     flex-wrap: wrap;
     height: 100px;
@@ -110,7 +109,7 @@
   align-items: center;
   gap: 2rem;
   margin-left: auto;
-  margin-right: 4rem;
+  margin-right: auto;
 }
 
 .nav-button {
@@ -158,7 +157,7 @@
   /* Responsive styles */
   @media (min-width: 768px) {
     .header {
-    padding: 0.5rem 1rem;
+    padding: 0 1rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -169,6 +168,8 @@
   .logo-container {
     padding-left: 0;
     margin-right: auto;
+    display: flex;
+    align-items: center;
   }
 
   .logo {
@@ -183,7 +184,8 @@
   .nav-links {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .nav-button {
@@ -221,6 +223,13 @@
 
   .sidebar {
     display: none !important;
+  }
+
+  .language-switcher {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
   }
   

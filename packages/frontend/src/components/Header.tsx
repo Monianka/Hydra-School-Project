@@ -61,12 +61,12 @@ const Header: React.FC<{}> = () => {
         >
           {t.courses}
         </button>
-        <button
+        {/* <button
           className="nav-button"
           onClick={() => handleNavigation("/blog")}
         >
           {blogLabel}
-        </button>
+        </button> */}
         <button
           className="nav-button"
           onClick={() => handleNavigation("/about")}
