@@ -20,6 +20,8 @@ export interface CourseTranslations {
       prerequisites: string[];
       whatYouWillLearn: string[];
       howItWorks: string;
+      nextStep?: string;
+
     };
   };
   pl: {
@@ -32,6 +34,7 @@ export interface CourseTranslations {
       prerequisites: string[];
       whatYouWillLearn: string[];
       howItWorks: string;
+      nextStep?: string;
     };
   };
 }
@@ -52,30 +55,33 @@ export const courses: Course[] = [
       en: {
         title: "PADI Discover Scuba Diving",
         price: "Price: £50",
+        duration: "2 hours session",
         description:
           "Experience scuba diving for the first time! Discover what it’s like to breathe underwater and explore a whole new world — no certification required.",
         fullDescription: {
           overview:
-            "Have you always wanted to try scuba diving but were not ready to commit to a full course?The PADI Discover Scuba Diving program is the perfect first step. Led by our experienced PADI instructors at a safe and scenic dive site in Portstewart, this beginner-friendly session gives you a real taste of underwater exploration.Although it’s not a certification course, it’s a thrilling introduction to scuba diving that can count toward your PADI Open Water certification if you continue.",
+            "Have you ever wondered what it feels like to breathe underwater? Discover Scuba Diving is the perfect way to try scuba diving without committing to a full course.You will learn basic safety rules and how to use scuba equipment, followed by your first underwater experience under direct supervision of a PADI Instructor.",
           prerequisites:["You must be at least 10 years old", "Basic swimming skills recommended", "In good physical health", "No prior experience with scuba diving is required"],
           whatYouWillLearn:["How to use scuba diving equipment", "What it’s like to breathe underwater", "Key safety and communication skills", "Basic diving techniques like clearing your mask and equalizing pressure", "How to move and control buoyancy underwater", "How to take the next step toward full PADI certification"],
           howItWorks:
-            "The course includes five confined water sessions and four open water dives at a local dive site. Training is flexible and performance-based.",
+            "Briefing and equipment orientation, confined water practice, and an open water dive under instructor supervision. All in a safe and supportive environment.",
+            nextStep: "If you loved your Discover Scuba Diving experience, the next step is to enroll in the PADI Open Water Diver course — the world’s most popular scuba certification for beginners. It’s your gateway to becoming a certified diver and exploring the underwater world with confidence. Ask us about our special offer for Discover Scuba Diving participants who want to take the plunge into full certification!"
         },
       },
       pl: {
         title: "PADI Discover Scuba Diving",
         price: "Cena: £50",
+        duration: "2 godziny sesji",
         description:
           "Zanurkuj po raz pierwszy! Odkryj, jak to jest oddychać pod wodą i poznaj fascynujący świat nurkowania — bez certyfikatu i bez stresu.",
         fullDescription: {
           overview:
-            "Zawsze marzyłeś o nurkowaniu, ale nie byłeś gotów na pełny kurs? Program PADI Discover Scuba Diving to idealny sposób na rozpoczęcie przygody.Pod opieką doświadczonego instruktora PADI, na bezpiecznym i malowniczym miejscu nurkowym w Portstewart, spróbujesz prawdziwego nurkowania – nawet jeśli nigdy wcześniej nie miałeś na sobie sprzętu." +
-"To nie jest kurs certyfikacyjny, ale może być pierwszym krokiem do zdobycia uprawnień nurkowych PADI.",
+            "Zawsze zastanawiałeś się, jak to jest oddychać pod wodą? Discover Scuba Diving to idealny sposób, aby spróbować nurkowania bez zobowiązań do pełnego kursu. Podczas zajęć poznasz podstawy bezpieczeństwa i obsługi sprzętu nurkowego, a następnie wejdziesz do wody pod ścisłym nadzorem instruktora PADI. Pierwsze zanurzenie odbywa się w kontrolowanych warunkach – na basenie lub w spokojnej wodzie.",
           prerequisites:["Minimalny wiek: 10 lat", "Podstawowe umiejętności pływania zalecane", "Dobra kondycja fizyczna", "Brak wcześniejszego doświadczenia w nurkowaniu nie jest wymagany"],
           whatYouWillLearn:["Obsługę podstawowego sprzętu nurkowego", "Jak oddychać pod wodą", "Podstawowe zasady bezpieczeństwa i komunikacji", "Techniki nurkowania, takie jak oczyszczanie maski i wyrównywanie ciśnienia", "Poruszanie się i kontrola pływalności pod wodą", "Jak zrobić pierwszy krok w kierunku pełnego certyfikatu PADI"],
           howItWorks:
             "Instruktaż i omówienie sprzętu, praktyka w płytkiej wodzie, nurkowanie pod okiem instruktora w otwartych wodach. Wszystko w bezpiecznym i przyjaznym środowisku.",
+            nextStep: "Jeśli spodobało Ci się doświadczenie Discover Scuba Diving, kolejnym krokiem jest zapisanie się na kurs PADI Open Water Diver — najpopularniejszy kurs certyfikacyjny dla początkujących nurków. To Twoja brama do zostania certyfikowanym nurkiem i odkrywania podwodnego świata z pewnością siebie. Zapytaj nas o specjalną ofertę dla uczestników Discover Scuba Diving, którzy chcą kontynuować naukę i zdobyć pełną certyfikację!"
         },
       },
     },
@@ -88,29 +94,33 @@ export const courses: Course[] = [
       en: {
         title: "PADI Open Water Diver",
         price: "Price: £525",
+        duration: "2-3 days",
         description:
           "The world's most popular scuba diving certification course for beginners.",
         fullDescription: {
           overview:
-            "The PADI Open Water Diver course is your gateway to exploring the underwater world. This comprehensive course teaches you essential dive theory, safety procedures, and underwater skills.",
+            "The PADI Open Water Diver course is your gateway to exploring the underwater world. During the course, you will learn everything you need to dive safely up to 18 meters anywhere in the world. This comprehensive course covers not only dive theory but also practical skills that will allow you to enjoy diving with confidence and safety.",
           prerequisites:["You must be at least 10 years old", "Able to swim", "In good physical health", "No prior experience with scuba diving is required"],
-          whatYouWillLearn:["Basic scuba diving theory, confined water dives to learn basic scuba skills, and open water dives to review your skills and explore."],
+          whatYouWillLearn:["Basic scuba diving theory", "Confined water dives to learn basic scuba skills", "Open water dives to review your skills and explore", "PADI's Safe Diving Principles", "Dive planning and risk management", "Basic scuba skills like mask clearing, equalizing, buoyancy control", "Underwater communication and problem-solving", "How to take the first step toward further PADI certification"],
           howItWorks:
-            "The course includes confined water sessions and four open water dives at a local dive site. Training is flexible and performance-based.",
+            "The course includes theory (eLearning) – completed online at your own pace, confined water sessions, and four open water dives at a local dive site. Training is flexible and performance-based.",
+          nextStep: "The next step is to enroll in the PADI Advanced Open Water Diver course"
         },
       },
       pl: {
         title: "PADI Open Water Diver",
         price: "Cena: £525",
+        duration: "2-3 dni",
         description:
           "Najpopularniejszy na świecie kurs certyfikacji nurkowej dla początkujących.",
         fullDescription: {
           overview:
-            "Kurs PADI Open Water Diver to Twoja brama do odkrywania podwodnego świata.",
+            "Kurs PADI Open Water Diver to Twoja brama do odkrywania podwodnego świata.Podczas kursu nauczysz się wszystkiego, czego potrzebujesz, aby bezpiecznie nurkować do głębokości 18 metrów, w dowolnym miejscu na świecie. Ten kompleksowy kurs obejmuje nie tylko teorię nurkowania, ale także praktyczne umiejętności, które pozwolą Ci cieszyć się nurkowaniem z pewnością siebie i bezpieczeństwem.",
           prerequisites:["Musisz mieć co najmniej 10 lat", "Umieć pływać", "Być w dobrej kondycji fizycznej", "Brak wcześniejszego doświadczenia w nurkowaniu nie jest wymagany"],
-          whatYouWillLearn:["Podstawy teorii nurkowania, nurkowania w kontrolowanych warunkach, aby nauczyć się podstawowych umiejętności nurkowych, oraz nurkowania na wodach otwartych, aby przećwiczyć swoje umiejętności i odkrywać."],
+          whatYouWillLearn:["Podstawy teorii nurkowania", "Nurkowania w kontrolowanych warunkach, aby nauczyć się podstawowych umiejętności nurkowych", "Nurkowania na wodach otwartych, aby przećwiczyć swoje umiejętności i odkrywać.", "Zasad Bezpiecznego Nurkowania PADI", "Planowania nurkowań i zarządzania ryzykiem", "Podstawowych umiejętności nurkowania, takich jak oczyszczanie maski, wyrównywanie ciśnienia, kontrola pływalności", "Komunikacji pod wodą i rozwiązywania problemów", "Jak zrobić pierwszy krok w kierunku dalszej certyfikacji PADI"],
           howItWorks:
-            "Kurs obejmuje sesje w wodach basenopodobnych i cztery nurkowania na wodach otwartych.",
+            "Kurs obejmuje teorię (eLearning) – uczysz się online we własnym tempie, sesje w wodach basenopodobnych i cztery nurkowania na wodach otwartych. Trening jest elastyczny i oparty na osiągnięciach.",
+          nextStep: "Kolejnym krokiem jest zapisanie się na kurs PADI Advanced Open Water Diver!"
         },
       },
     },
@@ -123,29 +133,33 @@ export const courses: Course[] = [
       en: {
         title: "PADI Advanced Open Water Diver",
         price: "Price: £350",
+        duration: "2-3 days",
         description:
-          "Build on your skills and dive deeper. This course includes five adventure dives such as deep and navigation dives.",
+          "Build on your skills and dive deeper. This is next step after PADI OWD.",
         fullDescription: {
           overview:
-            "The Advanced Open Water Diver course helps you gain more confidence and enhance your scuba skills through different Adventure Dives.",
-          prerequisites:["You must be a certified Open Water Diver", "Minimum age: 12 years old"],
-          whatYouWillLearn:["Five adventure dives including a deep dive, an underwater navigation dive, and three others such as night, wreck, or peak performance buoyancy dives."],
+            "The Advanced Open Water Diver course helps you gain more confidence and enhance your scuba skills through different Adventure Dives. This course includes five adventure dives such as deep and navigation dives. ",
+          prerequisites:["You must be a certified PADI Open Water Diver", "Minimum age: 12 years old"],
+          whatYouWillLearn:["Diving up to 30m", "Improved buoyancy", "Underwater navigation"],
           howItWorks:
             "You'll plan your learning path with your instructor by choosing from a long list of Adventure Dives. Training is practical and hands-on.",
+          nextStep: "PADI Deep Diver"
         },
       },
       pl: {
         title: "PADI Advanced Open Water Diver",
         price: "Cena: £350",
+        duration: "2-3 dni",
         description:
-          "Rozwiń swoje umiejętności i nurkuj głębiej. Ten kurs obejmuje pięć nurkowań przygodowych, w tym nurkowanie głębokie i nawigacyjne.",
+          "Chcesz nurkować głębiej i zdobyć więcej doświadczenia? Ten kurs jest kolejnym krokiem po PADI OWD.",
         fullDescription: {
           overview:
-            "Kurs Advanced Open Water Diver pomaga zdobyć większą pewność siebie i rozwinąć umiejętności nurkowe poprzez różne nurkowania przygodowe.",
+            "Kurs Advanced Open Water Diver pomaga zdobyć większą pewność siebie i rozwinąć umiejętności nurkowe. Kurs obejmuje pięć nurkowań przygodowych, takich jak nurkowanie głębokie i nawigacyjne...Pozostałe nurkowania możesz wybrać (np. wrakowe, nocne, dry suit).",
           prerequisites:["Musisz być certyfikowanym nurkiem Open Water Diver.", " Minimalny wiek: 12 lat."],
-          whatYouWillLearn:["Pięć nurkowań przygodowych, w tym nurkowanie głębokie, nawigacyjne oraz trzy inne, takie jak nurkowanie nocne, wrakowe lub nurkowanie z doskonałą pływalnością."],
+          whatYouWillLearn:["Nurkowanie do 30m", "Lepszej kontroli pływalności", "Orientacji pod wodą"],
           howItWorks:
             "Zaplanujesz swoją ścieżkę nauki z instruktorem, wybierając z obszernej listy nurkowań przygodowych. Szkolenie jest praktyczne i hands-on.",
+          nextStep: "PADI Deep Diver"
         },
       },
     },
@@ -158,30 +172,33 @@ export const courses: Course[] = [
       en: {
         title: "PADI Rescue Diver",
         price: "Price: £380",
+        duration: "2-3 days",
         description:
           "Learn to prevent and manage problems in the water and become more confident in your diving skills.",
         fullDescription: {
           overview:
             "The PADI Rescue Diver course is one of the most challenging, yet rewarding courses you'll take. It expands your awareness of diver safety.",
           prerequisites:["You must be at least 12 years old", "A certified Advanced Open Water Diver", "Emergency First Response training within the past 24 months"],  
-          whatYouWillLearn:["Self-rescue, recognizing and managing stress in other divers, emergency management and equipment, rescuing panicked and unresponsive divers."],
+          whatYouWillLearn:["Self-rescue", "Recognizing and managing stress in other divers", "Emergency management and equipment", "Rescuing panicked and unresponsive divers"],
           howItWorks:
-            "A combination of classroom learning, confined water practice, and open water rescue scenarios designed to build your confidence and preparedness.",
+            "A combination of classroom learning, confined water practice, and open water rescue scenarios designed to build your confidence and preparedness Outcome: become a safer and more confident diver.",
         },
       },
       pl: {
         title: "PADI Rescue Diver",
         price: "Cena: £380",
+        duration: "2-3 dni",
         description:
           "Naucz się zapobiegać i zarządzać problemami w wodzie oraz zyskaj pewność siebie w swoich umiejętnościach nurkowych.",
         fullDescription: {
           overview:
             "Kurs PADI Rescue Diver jest jednym z najbardziej wymagających, ale i satysfakcjonujących kursów, które możesz odbyć. Poszerza Twoją świadomość bezpieczeństwa nurków.",
-          prerequisites:["Musisz mieć co najmniej 12 lat", "Być certyfikowanym nurkiem Advanced Open Water Diver", "Ukończyć szkolenie Emergency First Response w ciągu ostatnich 24 miesięcy"],
+          prerequisites:["Musisz mieć co najmniej 12 lat", "Być certyfikowanym nurkiem PADI Advanced Open Water Diver", "Ukończyć szkolenie Emergency First Response w ciągu ostatnich 24 miesięcy"],
          
-          whatYouWillLearn:["Samoratowanie, rozpoznawanie i zarządzanie stresem u innych nurków, zarządzanie sytuacjami awaryjnymi i sprzętem, ratowanie panikujących i nieprzytomnych nurków."],
+          whatYouWillLearn:["Samoratowanie", "Rozpoznawanie i zarządzanie stresem u innych nurków", "Zarządzanie sytuacjami awaryjnymi i sprzętem", "Ratowanie panikujących i nieprzytomnych nurków"],
           howItWorks:
-            "Kurs łączy w sobie zajęcia teoretyczne, praktykę w kontrolowanych warunkach wodnych oraz scenariusze ratunkowe w otwartych wodach, mające na celu zwiększenie Twojej pewności siebie i przygotowania.",
+            "Kurs łączy w sobie zajęcia teoretyczne, praktykę w kontrolowanych warunkach wodnych oraz scenariusze ratunkowe w otwartych wodach, mające na celu zwiększenie Twojej pewności siebie i przygotowania. Efekt: stajesz się świadomym i odpowiedzialnym nurkiem.",
+          nextStep: "PADI Divemaster",
         },
       },
     },
@@ -200,9 +217,9 @@ export const courses: Course[] = [
           overview:
             "The PADI Divemaster course is your first level of professional training, preparing you for leadership roles in diving.",
           prerequisites:["You must be at least 18 years old", "A certified Rescue Diver", "40 logged dives to begin, and 60 dives to earn certification."],
-          whatYouWillLearn:["Leadership skills in diving through theory classes, self-study, water skill exercises, and training exercises."],
+          whatYouWillLearn:["Leadership skills in diving through theory classes", "Self-study", "Water skill exercises", "Training exercises."],
           howItWorks:
-            "Safety Briefing – Introduction to equipment, dive basics, and safety rules, Shallow Water Practice – Try breathing and moving in a shallow, controlled environment, Guided Sea Dive – Experience a real dive in open water at our local site,All Equipment Included – We provide full gear: wetsuit, mask, fins, regulator, BCD, tank",
+            "Safety Briefing – Introduction to equipment, dive basics, and safety rules. Shallow Water Practice – Try breathing and moving in a shallow, controlled environment. Guided Sea Dive – Experience a real dive in open water at our local site. All Equipment Included – We provide full gear: wetsuit, mask, fins, regulator, BCD, tank.",
         },
       },
       pl: {
@@ -215,7 +232,7 @@ export const courses: Course[] = [
             "Kurs PADI Divemaster to Twój pierwszy poziom profesjonalnego szkolenia, przygotowujący do ról przywódczych w nurkowaniu.",
           prerequisites:["Musisz mieć ukończone 18 lat", "Być certyfikowanym nurkiem Rescue Diver", "Zalogowane 40 nurkowań na początek oraz 60 nurkowań, aby uzyskać certyfikat."],
            
-          whatYouWillLearn:["Umiejętności przywódcze w nurkowaniu poprzez zajęcia teoretyczne i samodzielne, ćwiczenia umiejętności wodnych i wytrzymałościowych oraz ćwiczenia treningowe."],
+          whatYouWillLearn:["Umiejętności przywódcze w nurkowaniu poprzez zajęcia teoretyczne", "Samodzielne studiowanie", "Ćwiczenia umiejętności wodnych", "Ćwiczenia treningowe"],
           howItWorks:
             "Kurs obejmuje warsztaty, oceny praktyczne i planowanie nurkowań w rzeczywistych warunkach. Będziesz asystować instruktorom przy studentach i prowadzić nurkowania.",
         },

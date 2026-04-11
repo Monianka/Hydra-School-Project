@@ -1,7 +1,7 @@
 const sharp = require('sharp');
 const path = require('path');
 
-const logoPath = path.resolve(__dirname, '../src/assets/logos/hydra_logo.jpg');
+const logoPath = path.resolve(__dirname, '../src/assets/logos/hydra_logo_transparent.png');
 const publicPath = path.resolve(__dirname, '../public');
 
 async function generateFavicons() {

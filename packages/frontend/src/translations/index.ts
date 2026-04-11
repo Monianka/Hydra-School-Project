@@ -4,7 +4,36 @@ export const translations = {
       courses: "Courses",
       about: "About Us",
       home: "Home",
-      blog: "Blog"
+      blog: "Blog",
+      locations: "Dive Locations"
+    },
+    locations: {
+      navLabel: "Dive Locations",
+      pageTitle: "Dive Locations | UK Inland Diving Sites",
+      pageHeading: "Dive Locations",
+      pageDescription: "Explore the inland dive locations we use for training and guided experience, including maps, site notes, and direct website links.",
+      viewLocation: "View Location",
+      visitWebsite: "Visit Website",
+      backToLocations: "← Back to Dive Locations",
+      quickFacts: "Quick Facts",
+      region: "Region",
+      website: "Website",
+      leybourneLakes: "Leybourne Lakes",
+      vobsterQuay: "Vobster Quay",
+      stoneyCove: "Stoney Cove",
+      capernwray: "Capernwray"
+    },
+    blog: {
+      sectionTitle: "From Our Blog",
+      sectionSubtitle: "Scuba diving tips, guides & stories from the deep",
+      readMore: "Read Article",
+      backToBlog: "← Back to Blog",
+      by: "By",
+      minRead: "min read",
+      allArticles: "All Articles",
+      pageTitle: "Scuba Diving Blog | Tips, Guides & Stories",
+      pageDescription: "Explore our scuba diving blog for tips, PADI course guides, UK dive sites, and stories from underwater adventures.",
+      noPostsYet: "No articles yet. Check back soon!"
     },
     hero: {
       title: "Professional Scuba Diving School in London & Kent",
@@ -24,7 +53,9 @@ export const translations = {
       staff: "Polish/English Speaking Staff (Obsługa po polsku)"
     },
     courses: {
+      sectionKicker: "Courses",
       sectionTitle: "Our Courses",
+      sectionSubtitle: "Professional scuba training paths for beginners, continuing divers, and future dive leaders.",
       bookNow: "Book Now",
       viewMore: "View More",
       call: "Call",
@@ -48,7 +79,37 @@ export const translations = {
     nav: {
       courses: "Kursy",
       about: "O Nas",
-      home: "Strona Główna"
+      home: "Strona Główna",
+      blog: "Blog",
+      locations: "Miejsca Nurkowe"
+    },
+    locations: {
+      navLabel: "Miejsca Nurkowe",
+      pageTitle: "Miejsca Nurkowe | Brytyjskie Bazy i Obiekty Nurkowe",
+      pageHeading: "Miejsca Nurkowe",
+      pageDescription: "Poznaj miejsca nurkowe, z których korzystamy podczas szkoleń i wyjazdów, wraz z mapą, opisem i linkiem do strony obiektu.",
+      viewLocation: "Zobacz miejsce",
+      visitWebsite: "Odwiedź stronę",
+      backToLocations: "← Powrót do Miejsc Nurkowych",
+      quickFacts: "Najważniejsze informacje",
+      region: "Region",
+      website: "Strona internetowa",
+      leybourneLakes: "Leybourne Lakes",
+      vobsterQuay: "Vobster Quay",
+      stoneyCove: "Stoney Cove",
+      capernwray: "Capernwray"
+    },
+    blog: {
+      sectionTitle: "Z Naszego Bloga",
+      sectionSubtitle: "Porady nurkowe, przewodniki i opowieści z głębin",
+      readMore: "Czytaj artykuł",
+      backToBlog: "← Powrót do Bloga",
+      by: "Autor",
+      minRead: "min czytania",
+      allArticles: "Wszystkie artykuły",
+      pageTitle: "Blog o Nurkowaniu | Porady, Przewodniki i Opowieści",
+      pageDescription: "Odkryj nasz blog o nurkowaniu — porady, przewodniki po kursach PADI, miejsca nurkowe w UK i relacje z podwodnych przygód.",
+      noPostsYet: "Brak artykułów. Zajrzyj wkrótce!"
     },
     hero: {
       title: "Profesjonalna Szkoła Nurkowania w Londynie i Kent",
@@ -68,7 +129,9 @@ export const translations = {
       staff: "Obsługa po polsku i angielsku"
     },
     courses: {
+      sectionKicker: "Kursy",
       sectionTitle: "Nasze Kursy",
+      sectionSubtitle: "Profesjonalne ścieżki szkoleniowe dla początkujących, rozwijających się nurków i przyszłych liderów nurkowania.",
       bookNow: "Zarezerwuj",
       viewMore: "Więcej",
       call: "Zadzwoń",

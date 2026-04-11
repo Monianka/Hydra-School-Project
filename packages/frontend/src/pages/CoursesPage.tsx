@@ -2,14 +2,15 @@ import React from 'react';
 import Header from '../components/Header';
 import Courses from './Courses';
 import Footer from '../components/Footer';
+import './CoursesPage.css';
 
 const CoursesPage = () => {
   return (
-    <div className="page-container">
+    <div className="courses-page-container">
       <Header />
       <main>
         <section id="courses">
-          <Courses />
+          <Courses layout="grid" />
         </section>
       </main>
       <Footer />

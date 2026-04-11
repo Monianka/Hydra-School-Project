@@ -7,7 +7,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/translations";
 const menuIcon = "/icons/134216_menu_lines_hamburger_icon(2).png";
 const closeBtn = "/icons/4115230_cancel_close_delete_icon.png";
-const logoHydra = "/logos/hydra_logo.jpg";
+const logoHydra = "/logos/hydra_logo_transparent.png";
 
 const Header: React.FC<{}> = () => {
   const { language } = useLanguage();

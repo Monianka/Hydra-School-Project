@@ -1,14 +1,25 @@
-"use client";
-import React from "react";
-import styles from "./Courses.module.css";
-import CoursesSection from "@/components/CoursesSection";
+import type { Metadata } from "next";
+import CoursesClient from "./CoursesClient";
 
-const CoursesPage: React.FC = () => {
-  return (
-    <div className={styles["courses-container"]}>
-      <CoursesSection titleClassName={styles["section-title"]} />
-    </div>
-  );
+export const metadata: Metadata = {
+  title: "Scuba Diving Courses",
+  description:
+    "Browse PADI-certified scuba diving courses offered by Hydra-Scuba Diving School in London, Kent and across England. Courses in English and Polish.",
+  alternates: {
+    canonical: "https://hydra-scubadiving.com/courses",
+    languages: {
+      en: "https://hydra-scubadiving.com/courses",
+      pl: "https://hydra-scubadiving.com/pl/courses",
+    },
+  },
+  openGraph: {
+    title: "Scuba Diving Courses | Hydra-Scuba Diving School",
+    description:
+      "PADI-certified scuba diving courses in London, Kent and England. Beginner to professional levels. Polish and English instruction.",
+    url: "https://hydra-scubadiving.com/courses",
+  },
 };
 
-export default CoursesPage;
+export default function CoursesPage() {
+  return <CoursesClient />;
+}

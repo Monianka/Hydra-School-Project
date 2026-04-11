@@ -5,6 +5,7 @@ import About from './About';
 import './Home.css';
 import HeroSection from '../components/HeroSection';
 import Footer from '../components/Footer';
+import BlogSection from '../components/BlogSection';
 
 const Home=()=>{
     return (
@@ -18,7 +19,10 @@ const Home=()=>{
                     <Courses />
                 </section>
                 <section id="about" className='animate-slide-in-left'>
-                    <About />
+                    <About showSectionHeader />
+                </section>
+                <section id="blog" className='animate-slide-in-left'>
+                    <BlogSection />
                 </section>
             </main>
             <Footer />

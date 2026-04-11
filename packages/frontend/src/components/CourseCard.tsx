@@ -8,6 +8,7 @@ type CourseCardProps = {
   image: string;
   title: string;
   price?: string;
+  duration?: string;
   description: string;
   onBook: () => void;
   slug?: string;
@@ -17,6 +18,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
   image,
   title,
   price,
+  duration,
   description,
   onBook,
   slug,
@@ -33,14 +35,17 @@ const CourseCard: React.FC<CourseCardProps> = ({
       <img src={image} alt={title} className="course-card-image" />
       <h3 className="course-card-title">{title}</h3>
       <p className="course-card-description">{description}</p>
-      <p className="course-card-price">{price}</p>
-      <div className="course-card-buttons">
-        <button onClick={handleCallNow} className="btn-book">
-          {t.bookNow}
-        </button>
-       <Link to={`/courses/${slug}`} className="btn-view-more">
-  {t.viewMore}
-</Link>
+      <div className="course-card-bottom">
+        {duration && <p className="course-card-duration">&#128336; {duration}</p>}
+        {price && <p className="course-card-price">{price}</p>}
+        <div className="course-card-buttons">
+          <button onClick={handleCallNow} className="btn-book">
+            {t.bookNow}
+          </button>
+          <Link to={`/courses/${slug}`} className="btn-view-more">
+            {t.viewMore}
+          </Link>
+        </div>
       </div>
     </div>
   );

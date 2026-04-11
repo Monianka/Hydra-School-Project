@@ -1,0 +1,52 @@
+.dive-location-card {
+  background: linear-gradient(180deg, rgba(0, 48, 73, 0.96), rgba(42, 100, 120, 0.92));
+  border: 1px solid rgba(144, 224, 239, 0.18);
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+  height: 100%;
+}
+
+.dive-location-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  height: 100%;
+}
+
+.dive-location-card-area {
+  margin: 0;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.dive-location-card-content h3 {
+  margin: 0;
+  font-size: 1.45rem;
+}
+
+.dive-location-card-description {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.75;
+  flex: 1;
+}
+
+.dive-location-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.dive-location-card-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.dive-location-card-link-secondary {
+  color: var(--primary-light);
+}

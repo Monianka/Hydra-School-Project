@@ -1,3 +1,33 @@
+.about-section {
+  width: 100%;
+}
+
+.about-section-header {
+  margin: 0 auto 1.75rem;
+  max-width: 44rem;
+  text-align: center;
+}
+
+.about-section-kicker {
+  margin: 0 0 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.about-section-header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.about-section-subtitle {
+  margin: 0.7rem 0 0;
+  color: rgba(255, 255, 255, 0.84);
+  line-height: 1.7;
+}
+
 .about-card {
   background: var(--gradient);
   color: var(--text-light);
@@ -34,6 +64,7 @@
   font-size: 1rem;
   line-height: 1.6;
   color: var(--primary-white);
+  white-space: pre-line;
 }
 
 @media (min-width: 768px) {

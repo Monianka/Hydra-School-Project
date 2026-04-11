@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations";
 import { Course, courses } from "../utils/coursesData";
@@ -35,7 +36,30 @@ const CourseDetail: React.FC = () => {
   };
   return (
     <div className="course-detail-page">
+      <Helmet>
+        <title>{`${courseData.title} | Hydra-Scuba Diving School`}</title>
+        <meta name="description" content={courseData.description} />
+        <link
+          rel="canonical"
+          href={`https://hydra-scubadiving.com/courses/${course.slug}`}
+        />
+        <meta
+          property="og:title"
+          content={`${courseData.title} | Hydra-Scuba Diving School`}
+        />
+        <meta property="og:description" content={courseData.description} />
+        <meta
+          property="og:url"
+          content={`https://hydra-scubadiving.com/courses/${course.slug}`}
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Header />
+      <div className="course-detail-back-bar">
+        <button className="course-detail-back-btn" onClick={() => navigate("/courses")}>
+          &#8592; {language === "pl" ? "Wróć do kursów" : "Back to Courses"}
+        </button>
+      </div>
       <HeroSection
       title={courseData.title}
       subtitle={courseData.description}
