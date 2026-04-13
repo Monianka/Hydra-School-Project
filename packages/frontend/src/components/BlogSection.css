@@ -48,6 +48,10 @@
   gap: 1.5rem;
 }
 
+.blog-section-carousel {
+  display: none;
+}
+
 @media (max-width: 980px) {
   .blog-section-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -61,6 +65,92 @@
   }
 
   .blog-section-grid {
-    grid-template-columns: 1fr;
+    display: none;
+  }
+
+  .blog-section-carousel {
+    display: block;
+    width: 100%;
+  }
+
+  .blog-section-carousel-track {
+    display: flex;
+    transition: transform 0.4s ease;
+    width: 100%;
+  }
+
+  .blog-section-carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .blog-section-carousel-slide .blog-card {
+    width: 90%;
+    min-width: 90%;
+  }
+
+  .blog-section-carousel {
+    position: relative;
+    overflow: hidden;
+    clip-path: inset(0);
+  }
+
+  .blog-section-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    line-height: 1;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .blog-section-carousel-btn-prev {
+    left: 0.5rem;
+  }
+
+  .blog-section-carousel-btn-next {
+    right: 0.5rem;
+  }
+
+  .blog-section-carousel-btn:hover {
+    opacity: 0.75;
+    transform: translateY(-50%) scale(1.15);
+  }
+
+  .blog-section-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .blog-section-carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .blog-section-carousel-dot.active {
+    background: var(--accent);
+    transform: scale(1.3);
   }
 }

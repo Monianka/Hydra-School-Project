@@ -16,7 +16,7 @@ const Header: React.FC<{}> = () => {
   const locationsT = translations[language].locations;
   const navigate = useNavigate();
   const location = useLocation();
-  const isHomePage = location.pathname === "/" || location.pathname === "/pl";
+  const isHomePage = location.pathname === "/";
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [locationsSidebarOpen, setLocationsSidebarOpen] = useState(false);

@@ -1,0 +1,15 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# Redirect legacy language-prefixed URLs to the canonical English routes.
+RewriteRule ^pl/?$ / [R=301,L]
+RewriteRule ^pl/(.*)$ /$1 [R=301,L]
+
+# Let existing files and directories resolve normally.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Send all other requests to the React entry point.
+RewriteRule ^ index.html [L]

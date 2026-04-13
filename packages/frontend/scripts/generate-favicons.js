@@ -2,16 +2,19 @@ const sharp = require('sharp');
 const path = require('path');
 
 const logoPath = path.resolve(__dirname, '../src/assets/logos/hydra_logo_transparent.png');
+const faviconSourcePath = path.resolve(__dirname, '../src/assets/logos/hydra_logo.jpg');
 const publicPath = path.resolve(__dirname, '../public');
 
+const faviconBackground = { r: 0, g: 48, b: 73, alpha: 1 };
+
 async function generateFavicons() {
-  // Generate favicon.ico (16x16, 32x32)
-  await sharp(logoPath)
-    .resize(32, 32)
+  // Use the solid logo source for tiny favicons so they remain visible in search results.
+  await sharp(faviconSourcePath)
+    .resize(32, 32, { fit: 'contain', background: faviconBackground })
     .toFile(path.join(publicPath, 'favicon-32x32.png'));
 
-  await sharp(logoPath)
-    .resize(16, 16)
+  await sharp(faviconSourcePath)
+    .resize(16, 16, { fit: 'contain', background: faviconBackground })
     .toFile(path.join(publicPath, 'favicon-16x16.png'));
 
   // Generate larger icons

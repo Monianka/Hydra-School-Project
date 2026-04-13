@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Home from '../pages/Home';
 import CoursesPage from '../pages/CoursesPage';
 import AboutPage from '../pages/AboutPage';
@@ -9,10 +9,19 @@ import CourseDetail from '../pages/CourseDetail';
 import DiveLocationsPage from '../pages/DiveLocationsPage';
 import DiveLocationDetail from '../pages/DiveLocationDetail';
 
+const LegacyLanguageRedirect = () => {
+  const location = useLocation();
+  const targetPath = location.pathname.replace(/^\/pl(?=\/|$)/, '') || '/';
+
+  return <Navigate to={targetPath} replace />;
+};
+
 const AppRoutes = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/pl" element={<LegacyLanguageRedirect />} />
+        <Route path="/pl/*" element={<LegacyLanguageRedirect />} />
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/courses/:slug" element={<CourseDetail />} />
