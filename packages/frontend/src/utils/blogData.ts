@@ -138,6 +138,87 @@ export const blogPosts: BlogDictionary = {
           ]
         }
       ]
+    },
+    {
+      id: '4',
+      slug: 'why-staying-within-your-diving-limits-and-training-matters',
+      title: 'Why Staying Within Your Diving Limits and Training Matters',
+      excerpt:
+        'A recent cave diving tragedy in the Maldives reminds us that proper training, conservative planning, and respect for limits are the foundation of safe scuba diving.',
+      intro:
+        'The recent tragedy in the Maldives shows that confidence and experience cannot replace proper training, sound judgement, and established safety procedures. Safe diving depends on careful preparation, discipline, and the wisdom to say, “This is beyond my current level.”',
+      content:
+        'Recreational scuba diving is very safe when divers stay within their certification and training limits, follow the dive plan, and use conservative judgement. Exceeding limits, ignoring procedures, and chasing depth can quickly turn an enjoyable activity into a dangerous one.',
+      coverImage: wreckImage,
+      cardImage: wreckThumb,
+      category: 'Safety',
+      author: 'Hydra-Scuba Diving School',
+      readingTime: 8,
+      publishedAt: '2026-06-10',
+      seoDescription:
+        'Learn why staying within your training, dive limits, and safety procedures matters in scuba diving — especially when exploring caves, wrecks, and deep dives.',
+      tags: ['diving safety', 'dive training', 'dive limits', 'cave diving'],
+      sections: [
+        {
+          heading: 'Scuba diving is safe when we follow the rules',
+          body: [
+            'One of the biggest misconceptions about diving is that it is inherently dangerous. In reality, recreational scuba diving has an excellent safety record when divers stay within their training, dive conservatively, and follow accepted procedures.',
+            'Most serious incidents happen not because people dive, but because they: - exceed their training or certification limits, - ignore safety procedures, - dive in conditions they are not prepared for, - or become overconfident. The underwater world is incredible, but it demands respect.'
+          ]
+        },
+        {
+          heading: 'Certifications exist for a reason',
+          body: [
+            'Sometimes divers think, “I’ve done plenty of dives—I’ll be fine.” But certifications are not just pieces of plastic. They represent the knowledge, skills, and emergency procedures needed for specific environments.',
+            'For example: - An Open Water Diver course teaches the foundations of recreational diving. - A Deep Diver course focuses on planning and managing dives to greater depths. - A Wreck Diver course teaches techniques and hazards associated with wrecks. - Cave diving and technical diving require entirely separate training and specialised procedures.',
+            'A wreck certification does not qualify someone to dive in caves. Although both involve overhead environments, the risks, navigation techniques, gas management, equipment configuration, and emergency procedures are fundamentally different.'
+          ]
+        },
+        {
+          heading: 'Chasing depth can become a dangerous goal',
+          body: [
+            'Over the years, the diving community has seen cases where divers pushed beyond their limits simply to reach another milestone. 40 metres. 50 metres. 60 metres. 70 metres. Sometimes it becomes less about the dive itself and more about being able to say, “I’ve been there.”',
+            'That mindset can be dangerous. Depth is not an achievement on its own. Every extra metre increases complexity: - breathing gas is consumed more quickly, - nitrogen narcosis becomes more significant, - no-decompression limits shrink, - and there is less room for mistakes.',
+            'When significant depth is combined with an overhead environment such as a cave or wreck penetration, the risks increase dramatically. The best divers are not the ones who dive the deepest. They are the ones who make good decisions and always return safely.'
+          ]
+        },
+        {
+          heading: 'Cave diving is a completely different discipline',
+          body: [
+            'Cave diving is widely regarded as one of the most technically demanding forms of scuba diving. Unlike open water, there may be: - no direct ascent to the surface, - complex navigation, - limited visibility, - silt-outs, - psychological stress, - and very little margin for error.',
+            'Add depths of 50–60 metres, and additional hazards such as nitrogen narcosis, oxygen toxicity, decompression obligations, and rapid gas consumption become critical considerations. This is why technical and cave diving require dedicated training, specialised equipment, redundant systems, and extensive experience.'
+          ]
+        },
+        {
+          heading: 'Overconfidence can be one of the biggest hazards',
+          body: [
+            'Many accident analyses point to a common pattern. A diver gains experience and starts feeling increasingly comfortable underwater. Then comes the thought: “Just a little deeper.” “Just a little farther.” “I can handle it.”',
+            'Sometimes they can. Sometimes they cannot. The most experienced divers I know are often the most conservative. They understand that saying, “I’m not trained for this dive,” is not a sign of weakness—it is a sign of professionalism and maturity.'
+          ]
+        },
+        {
+          heading: 'Always dive the plan',
+          body: [
+            'One of the oldest principles in scuba diving remains one of the most important: Plan the dive. Dive the plan. A proper dive plan should include: - maximum depth, - bottom time, - gas management, - environmental conditions, - emergency procedures, - and the capabilities of every member of the team.',
+            'Many incidents begin when divers abandon that plan underwater.'
+          ]
+        },
+        {
+          heading: 'Never dive alone',
+          body: [
+            'For recreational diving, the buddy system remains one of the most effective safety measures. A good buddy provides: - another set of eyes, - assistance during emergencies, - shared awareness, - and support if something unexpected happens.',
+            'While specialised solo diving training exists, it requires additional preparation and equipment. For most recreational divers, diving with a competent buddy is an essential layer of safety.'
+          ]
+        },
+        {
+          heading: 'We cannot eliminate every risk — but we can reduce it',
+          body: [
+            'No adventure sport is completely risk-free, and scuba diving is no exception. Equipment can fail. Conditions can change. Unexpected situations can arise.',
+            'But we can significantly reduce those risks by: seeking proper training, staying within our certification limits, practising our skills regularly, planning carefully, and making conservative decisions. At the end of the day, diving is not about proving how deep, how far, or how extreme we can go. It is about exploring an extraordinary world safely and coming home with memories—not close calls.',
+            'Because the most successful dive is not the deepest one. It is the one where everyone returns safely to the surface.'
+          ]
+        }
+      ]
     }
   ],
   pl: [
@@ -269,6 +350,88 @@ export const blogPosts: BlogDictionary = {
           ]
         }
       ]
+    },
+    {
+      id: '4',
+      slug: 'dlaczego-trzymac-sie-uprawnien-i-limitow',
+      title: 'Dlaczego w nurkowaniu tak ważne jest trzymanie się swoich uprawnień i limitów?',
+      excerpt:
+        'Tragedia na Malediwach przypomina, że nawet doświadczenie nie zastąpi odpowiedniego szkolenia, procedur i zdrowego rozsądku podczas nurkowania.',
+      intro:
+        'Ostatnie wydarzenia na Malediwach ponownie pokazują, że nurkowanie jest bezpieczne tylko wtedy, gdy trzymamy się limitów, uprawnień i planu. Bez procedur i wsparcia, najtrudniejsze środowiska potrafią zamienić się w niebezpieczeństwo.',
+      content:
+        'Nurkowanie rekreacyjne może być bardzo bezpieczne, gdy każdy nurek działa w granicach swojej certyfikacji, doświadczenia i planu nurkowego. Przekraczanie ograniczeń, ignorowanie procedur oraz poszukiwanie głębokości dla samego trofeum to droga do poważnych wypadków.',
+      coverImage: wreckImage,
+      cardImage: wreckThumb,
+      category: 'Bezpieczeństwo',
+      author: 'Hydra-Scuba Diving School',
+      readingTime: 8,
+      publishedAt: '2026-06-10',
+      seoDescription:
+        'Poznaj zasady bezpiecznego nurkowania i dowiedz się, dlaczego trzymanie się uprawnień, limitów oraz planu jest kluczowe przy nurkowaniu jaskiniowym i głębokim.',
+      tags: ['bezpieczeństwo nurkowe', 'uprawnienia nurkowe', 'limity nurkowe', 'nurkowanie jaskiniowe'],
+      sections: [
+        {
+          heading: 'Nurkowanie jest bezpieczne — jeśli przestrzegamy zasad',
+          body: [
+            'To chyba najważniejsza rzecz, którą chciałbym tutaj podkreślić. Nurkowanie rekreacyjne jest bardzo bezpiecznym sportem, jeśli nurkujemy zgodnie ze swoim poziomem wyszkolenia, planem nurkowym i obowiązującymi procedurami.',
+            'Większość poważnych wypadków nie bierze się z „samego nurkowania”. Najczęściej problem zaczyna się wtedy, kiedy: - przekraczamy swoje limity, - ignorujemy procedury, - nurkujemy w warunkach, do których nie jesteśmy przygotowani, - albo zaczynamy wierzyć, że „nas to nie dotyczy”. Pod wodą naprawdę nie ma miejsca na ego.'
+          ]
+        },
+        {
+          heading: 'Uprawnienia istnieją po coś',
+          body: [
+            'Czasami można spotkać się z podejściem: „przecież mam już doświadczenie”, „robiłem trudniejsze nurkowania”, „dam sobie radę”. Tylko że każde szkolenie nurkowe istnieje z bardzo konkretnego powodu.',
+            'Kursy nie są po to, żeby „zbierać plastiki”, ale po to, żeby przygotować nurka do konkretnych warunków i potencjalnych problemów. Na przykład: - Open Water Diver daje podstawy bezpiecznego nurkowania rekreacyjnego, - Deep Diver uczy planowania i ryzyk związanych z głębokością, - Wreck Diver przygotowuje do nurkowania wrakowego, - ale cave diving czy technical diving to już zupełnie inny świat.',
+            'Uprawnienia wrakowe nie oznaczają automatycznie przygotowania do nurkowania jaskiniowego. To, że oba środowiska są „pod sufitem”, nie znaczy, że są takie same.'
+          ]
+        },
+        {
+          heading: 'Głębokość to nie trofeum',
+          body: [
+            'W nurkowaniu czasami pojawia się coś, co można nazwać „pogonią za głębokością”. 40 metrów. 50 metrów. 60 metrów. 70 metrów. „Bo ktoś już był.” „Bo chcę zobaczyć, jak to jest.” „Bo chcę zaliczyć kolejną głębokość.” I właśnie tutaj bardzo łatwo wpaść w pułapkę ambicji.',
+            'Znane są przypadki wypadków, gdzie nurkowie przekraczali swoje limity nie dlatego, że musieli — ale dlatego, że chcieli zejść głębiej, sprawdzić siebie albo „odhaczyć” kolejną liczbę. Tylko że pod wodą głębokość nie jest osiągnięciem sama w sobie.',
+            'Im głębiej schodzimy: - tym szybciej zużywamy gaz, - tym większy wpływ ma narkoza, - tym mniej czasu mamy na reakcję, - i tym mniejszy margines błędu. A kiedy do głębokości dochodzi jeszcze jaskinia, wrak lub trudne warunki — ryzyko rośnie bardzo szybko.'
+          ]
+        },
+        {
+          heading: 'Jaskinie i głębokie nurkowania to zupełnie inny poziom ryzyka',
+          body: [
+            'Nurkowanie jaskiniowe jest uznawane za jedną z najbardziej wymagających specjalizacji nurkowych. Nie chodzi tylko o samą głębokość.',
+            'W jaskini: - często nie ma bezpośredniej drogi do wynurzenia, - widoczność może spaść do zera w kilka sekund, - łatwo stracić orientację, - a stres i panika potrafią bardzo szybko eskalować sytuację.',
+            'Do tego, jeśli dodamy głębokość 50–60 metrów, dochodzą kolejne zagrożenia: - narkoza azotowa, - większe zużycie gazu, - obowiązkowa dekompresja, - toksyczność tlenowa, - dużo mniejszy margines błędu. Dlatego nurkowania techniczne wymagają: dodatkowego szkolenia, odpowiedniej konfiguracji sprzętu, redundancji gazu, doświadczenia i przede wszystkim bardzo dużej dyscypliny.'
+          ]
+        },
+        {
+          heading: 'Najbardziej niebezpieczny moment? Kiedy zaczynamy czuć się „zbyt pewnie”',
+          body: [
+            'To coś, co bardzo często przewija się w analizach wypadków nurkowych. Nurek zdobywa doświadczenie, zaczyna czuć się komfortowo pod wodą i stopniowo przesuwa swoje granice.',
+            '„Jeszcze trochę głębiej.” „Jeszcze kawałek dalej.” „Przecież wszystko jest pod kontrolą.” I właśnie wtedy najłatwiej wejść w sytuację, która przekracza nasze realne możliwości albo przygotowanie. Dobry nurek to nie ten, który schodzi najgłębiej. Dobry nurek to ten, który potrafi powiedzieć: „Nie mam jeszcze odpowiedniego szkolenia do tego nurkowania.”'
+          ]
+        },
+        {
+          heading: 'Zawsze nurkuj zgodnie z planem',
+          body: [
+            'Jedna z podstawowych zasad nurkowania brzmi: plan the dive — dive the plan. Plan nurkowania nie jest formalnością „na papierze”. To coś, co ma ograniczać ryzyko i pomagać podejmować spokojne decyzje pod wodą.',
+            'Dobry plan powinien uwzględniać: maksymalną głębokość, czas nurkowania, zapas gazu, warunki, procedury awaryjne oraz doświadczenie każdego nurka w zespole. Bardzo wiele problemów zaczyna się właśnie wtedy, kiedy odchodzimy od planu.'
+          ]
+        },
+        {
+          heading: 'Nigdy nie nurkuj sam',
+          body: [
+            'To kolejna zasada, która istnieje nie bez powodu. Partner nurkowy to nie tylko „towarzystwo pod wodą”. To dodatkowa para oczu, wsparcie psychiczne i przede wszystkim pomoc w sytuacji awaryjnej.',
+            'Oczywiście istnieją szkolenia do nurkowania solo, ale to zupełnie inny temat i również wymagają one specjalistycznego przygotowania. W standardowym nurkowaniu rekreacyjnym system partnerski pozostaje jedną z podstaw bezpieczeństwa.'
+          ]
+        },
+        {
+          heading: 'Nie da się przewidzieć wszystkiego — ale można bardzo ograniczyć ryzyko',
+          body: [
+            'Nurkowanie zawsze będzie sportem wymagającym odpowiedzialności. Nie jesteśmy w stanie przewidzieć każdej sytuacji pod wodą.',
+            'Ale możemy ogromnie zmniejszyć ryzyko poprzez: dobre szkolenie, regularne ćwiczenie umiejętności, nurkowanie zgodnie z limitami, rozsądne decyzje i uczciwe podejście do własnych możliwości. Bo pod wodą naprawdę najważniejsze nie jest to, jak głęboko schodzisz. Najważniejsze jest to, żeby bezpiecznie wrócić na powierzchnię.',
+            'Źródła i informacje wykorzystane w artykule opierają się m.in. na publikacjach Associated Press, Divernet, Dive Magazine oraz doniesieniach dotyczących śledztwa po wypadku na Malediwach.'
+          ]
+        }
+      ]
     }
   ]
 };
@@ -279,4 +442,8 @@ export function getBlogPosts(language: BlogLanguage): BlogPost[] {
 
 export function getBlogPostBySlug(slug: string, language: BlogLanguage): BlogPost | null {
   return blogPosts[language].find((post) => post.slug === slug) ?? null;
+}
+
+export function getBlogPostById(id: string, language: BlogLanguage): BlogPost | null {
+  return blogPosts[language].find((post) => post.id === id) ?? null;
 }

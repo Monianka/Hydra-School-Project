@@ -54,7 +54,7 @@ export const courses: Course[] = [
     translations: {
       en: {
         title: "PADI Discover Scuba Diving",
-        price: "Price: £50",
+        price: "Price: £80",
         duration: "2 hours session",
         description:
           "Experience scuba diving for the first time! Discover what it’s like to breathe underwater and explore a whole new world — no certification required.",
@@ -70,7 +70,7 @@ export const courses: Course[] = [
       },
       pl: {
         title: "PADI Discover Scuba Diving",
-        price: "Cena: £50",
+        price: "Cena: £80",
         duration: "2 godziny sesji",
         description:
           "Zanurkuj po raz pierwszy! Odkryj, jak to jest oddychać pod wodą i poznaj fascynujący świat nurkowania — bez certyfikatu i bez stresu.",

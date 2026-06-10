@@ -5,17 +5,20 @@ import Footer from '../components/Footer';
 import BlogCard from '../components/BlogCard';
 import { useLanguage } from '../contexts/LanguageContext';
 import { fetchBlogs, BlogPost } from '../services/blogs';
+import { getBlogPosts } from '../utils/blogData';
 import { translations } from '../translations';
 import './BlogList.css';
 
 const BlogList: React.FC = () => {
   const { language } = useLanguage();
   const t = translations[language].blog;
-  const [posts, setPosts] = useState<BlogPost[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [posts, setPosts] = useState<BlogPost[]>(getBlogPosts(language));
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     let mounted = true;
+    setPosts(getBlogPosts(language));
+
     setLoading(true);
     fetchBlogs(language)
       .then((data) => {
@@ -29,7 +32,7 @@ const BlogList: React.FC = () => {
     };
   }, [language]);
 
-  if (loading)
+  if (loading && posts.length === 0)
     return (
       <div className="blog-page">
         <Header />

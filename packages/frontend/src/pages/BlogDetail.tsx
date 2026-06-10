@@ -1,35 +1,62 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { useLanguage } from '../contexts/LanguageContext';
 import { fetchBlog, BlogPost } from '../services/blogs';
+import { getBlogPostById, getBlogPostBySlug } from '../utils/blogData';
 import { translations } from '../translations';
 import './BlogDetail.css';
 
 const BlogDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const { language } = useLanguage();
+  const navigate = useNavigate();
   const t = translations[language].blog;
-  const [post, setPost] = useState<BlogPost | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [post, setPost] = useState<BlogPost | null>(slug ? getBlogPostBySlug(slug, language) : null);
+  const [loading, setLoading] = useState(!Boolean(slug && getBlogPostBySlug(slug, language)));
+  const lastLoadedPost = useRef<BlogPost | null>(null);
 
   useEffect(() => {
     if (!slug) return;
     let mounted = true;
-    setLoading(true);
+    const localPost = getBlogPostBySlug(slug, language);
+    if (localPost) {
+      setPost(localPost);
+      lastLoadedPost.current = localPost;
+      setLoading(false);
+    } else {
+      setLoading(true);
+    }
+
     fetchBlog(slug, language)
       .then((data) => {
-        if (mounted) setPost(data);
+        if (!mounted) return;
+        if (data) {
+          setPost(data);
+          lastLoadedPost.current = data;
+          return;
+        }
+
+        if (lastLoadedPost.current) {
+          const targetPost = getBlogPostById(lastLoadedPost.current.id, language);
+          if (targetPost) {
+            navigate(`/blog/${targetPost.slug}`, { replace: true });
+            return;
+          }
+        }
+
+        setPost(null);
       })
       .finally(() => {
         if (mounted) setLoading(false);
       });
+
     return () => {
       mounted = false;
     };
-  }, [slug, language]);
+  }, [slug, language, navigate]);
 
   if (loading)
     return (
