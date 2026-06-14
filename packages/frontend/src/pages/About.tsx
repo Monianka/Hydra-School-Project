@@ -47,7 +47,7 @@ const About: React.FC<AboutProps> = ({ showSectionHeader = false }) => {
         </div>
       )}
       <div className="about-card">
-        <img src={damian} alt="Scuba Instructor" className="about-card-image" />
+        <img src={damian} alt="Scuba Instructor" className="about-card-image" loading="lazy" decoding="async" width={720} height={960} />
         <div className="about-card-content">
           <div className="about-card-text">
             {!showSectionHeader && <h2>{t.title}</h2>}

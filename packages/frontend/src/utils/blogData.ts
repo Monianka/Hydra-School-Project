@@ -21,6 +21,8 @@ export const blogPosts: BlogDictionary = {
       content:
         'Starting scuba diving is less about bravery and more about structure. Good training turns a new environment into a controlled, exciting, and deeply enjoyable experience. At Hydra-Scuba Diving School, we help beginners build confidence step by step so they can focus on learning, safety, and the pure pleasure of breathing underwater for the first time.',
       coverImage: diverImage,
+      coverImageWidth: 8688,
+      coverImageHeight: 5792,
       cardImage: diverThumb,
       category: 'Beginner Guide',
       author: 'Hydra-Scuba Diving School',
@@ -64,6 +66,8 @@ export const blogPosts: BlogDictionary = {
       content:
         'The UK is one of the most underrated places to develop as a diver. Conditions can vary quickly, and that is exactly why local diving builds excellent awareness, discipline, and adaptability. With the right briefings and equipment, UK scuba diving is both accessible and deeply rewarding.',
       coverImage: wreckImage,
+      coverImageWidth: 6144,
+      coverImageHeight: 4096,
       cardImage: wreckThumb,
       category: 'Dive Planning',
       author: 'Hydra-Scuba Diving School',
@@ -107,6 +111,8 @@ export const blogPosts: BlogDictionary = {
       content:
         'Buoyancy control is the difference between fighting the water and moving naturally through it. When divers improve this one skill, they use less energy, protect the underwater environment better, and enjoy a more relaxed experience from start to finish.',
       coverImage: reefImage,
+      coverImageWidth: 4000,
+      coverImageHeight: 6000,
       cardImage: reefThumb,
       category: 'Skills',
       author: 'Hydra-Scuba Diving School',

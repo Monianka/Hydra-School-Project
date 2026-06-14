@@ -10,7 +10,7 @@ const CoursesPage = () => {
       <Header />
       <main>
         <section id="courses">
-          <Courses layout="grid" />
+          <Courses layout="grid" includeSeo />
         </section>
       </main>
       <Footer />

@@ -43,6 +43,8 @@ export interface Course {
   id: number;
   slug?: string;
   image: string;
+  imageWidth: number;
+  imageHeight: number;
   translations: CourseTranslations;
 }
 
@@ -51,6 +53,8 @@ export const courses: Course[] = [
     id: 0,
     slug: "padi-discover-scuba-diving",
     image: image6,
+    imageWidth: 4032,
+    imageHeight: 3024,
     translations: {
       en: {
         title: "PADI Discover Scuba Diving",
@@ -90,6 +94,8 @@ export const courses: Course[] = [
     id: 1,
     slug: "padi-open-water-diver",
     image: image1,
+    imageWidth: 6144,
+    imageHeight: 4096,
     translations: {
       en: {
         title: "PADI Open Water Diver",
@@ -129,6 +135,8 @@ export const courses: Course[] = [
     id: 2,
     slug: "padi-advanced-open-water-diver",
     image: image2,
+    imageWidth: 4000,
+    imageHeight: 6000,
     translations: {
       en: {
         title: "PADI Advanced Open Water Diver",
@@ -168,6 +176,8 @@ export const courses: Course[] = [
     id: 3,
     slug: "padi-rescue-diver",
     image: image3,
+    imageWidth: 7360,
+    imageHeight: 4912,
     translations: {
       en: {
         title: "PADI Rescue Diver",
@@ -207,6 +217,8 @@ export const courses: Course[] = [
     id: 4,
     slug: "padi-divemaster",
     image: image4,
+    imageWidth: 5304,
+    imageHeight: 7380,
     translations: {
       en: {
         title: "PADI Divemaster",
@@ -243,6 +255,8 @@ export const courses: Course[] = [
     id: 5,
     slug: "padi-deep-diver",
     image: image5,
+    imageWidth: 5616,
+    imageHeight: 3744,
     translations: {
       en: {
         title: "PADI Deep Diver",
@@ -304,6 +318,8 @@ export const courses: Course[] = [
     id: 6,
     slug: "padi-enriched-air-nitrox-diver",
     image: image7,
+    imageWidth: 5472,
+    imageHeight: 3072,
     translations: {
       en: {
         title: "PADI Enriched Air (Nitrox) Diver",
@@ -365,6 +381,8 @@ export const courses: Course[] = [
     id: 7,
     slug: "padi-peak-performance-buoyancy",
     image: image8,
+    imageWidth: 4500,
+    imageHeight: 2982,
     translations: {
       en: {
         title: "PADI Peak Performance Buoyancy",
@@ -426,6 +444,8 @@ export const courses: Course[] = [
     id: 8,
     slug: "padi-night-diver",
     image: image9,
+    imageWidth: 8688,
+    imageHeight: 5792,
     translations: {
       en: {
         title: "PADI Night Diver",

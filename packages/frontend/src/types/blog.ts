@@ -13,6 +13,8 @@ export interface BlogPost {
   intro: string;
   content: string;
   coverImage: string;
+  coverImageWidth?: number;
+  coverImageHeight?: number;
   cardImage?: string;
   category: string;
   author: string;

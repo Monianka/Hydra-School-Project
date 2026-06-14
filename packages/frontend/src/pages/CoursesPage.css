@@ -7,3 +7,10 @@
   color: #fff;
   min-height: 100vh;
 }
+
+@media (max-width: 600px) {
+  .courses-page-container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}

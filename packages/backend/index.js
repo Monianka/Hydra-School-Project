@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
 const blogRoutes = require('./routes/blogRoutes');
+const consentRoutes = require('./routes/consentRoutes');
 const cors = require('cors');
 
 const app = express();
@@ -63,6 +64,6 @@ mongoose
   });
 
 app.use('/api/blogs', blogRoutes);
-
+app.use('/api/consent', consentRoutes);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));

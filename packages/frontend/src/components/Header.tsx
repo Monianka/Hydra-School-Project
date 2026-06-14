@@ -73,11 +73,10 @@ const Header: React.FC<{}> = () => {
         style={{ cursor: "pointer" }}
         title={!isHomePage ? (language === 'pl' ? 'Strona główna' : 'Home Page') : undefined}
       >
-        <img src={logoHydra} alt="Hydra logo" className="logo" />
+        <img src={logoHydra} alt="Hydra logo" className="logo" width={1024} height={1536} />
         {!isHomePage && <span className="logo-tooltip">{language === 'pl' ? 'Strona główna' : 'Home Page'}</span>}
       </div>
 
-      <LanguageSwitcher />
       <nav className="nav-links">
         <button className="nav-button" onClick={handleHomeNavigation}>
           {t.home}
@@ -118,6 +117,8 @@ const Header: React.FC<{}> = () => {
         </button>
       </nav>
 
+      <LanguageSwitcher />
+
       {desktopLocationsOpen && (
         <div className="nav-submenu-bar" id="desktop-locations-submenu">
           <button
@@ -139,12 +140,12 @@ const Header: React.FC<{}> = () => {
       )}
 
       <div className="hamburger" onClick={toggleSidebar}>
-        <img src={menuIcon} alt="Menu" />
+        <img src={menuIcon} alt="Menu" width={48} height={48} />
       </div>
 
       <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
         <div onClick={toggleSidebar}>
-          <img src={closeBtn} className="close-btn" alt="Close" />
+          <img src={closeBtn} className="close-btn" alt="Close" width={48} height={48} />
         </div>
         <ul className="sidebar-nav">
           <li>

@@ -120,7 +120,15 @@ const BlogDetail: React.FC = () => {
               </div>
             </div>
             <div className="blog-article-image-wrap">
-              <img src={post.coverImage} alt={post.title} className="blog-article-image" />
+              <img
+                src={post.coverImage}
+                alt={post.title}
+                className="blog-article-image"
+                loading="lazy"
+                decoding="async"
+                width={post.coverImageWidth}
+                height={post.coverImageHeight}
+              />
             </div>
           </div>
           <div className="blog-article-body-layout">

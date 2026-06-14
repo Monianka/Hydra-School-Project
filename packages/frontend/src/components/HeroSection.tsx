@@ -64,22 +64,25 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             href="https://www.facebook.com/HydraScubaDiving"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Hydra Scuba Diving on Facebook"
           >
-            <img src={facbookIcon} alt="Facebook" loading="lazy" />
+            <img src={facbookIcon} alt="Facebook" loading="lazy" width={48} height={48} />
           </a>
           <a
             href="https://www.instagram.com/hydra.divers/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Hydra Scuba Diving on Instagram"
           >
-            <img src={instagramIcon} alt="Instagram" loading="lazy" />
+            <img src={instagramIcon} alt="Instagram" loading="lazy" width={48} height={48} />
           </a>
           <a
             href="https://www.youtube.com/@divinglens"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Hydra Scuba Diving on YouTube"
           >
-            <img src={youtubeIcon} alt="youTube" loading="lazy" />
+            <img src={youtubeIcon} alt="youTube" loading="lazy" width={48} height={48} />
           </a>
           <a
             href="https://www.google.com/maps/place/Hydra-Scuba+Diving+School/@51.4426834,0.2977261,18.75z/data=!4m15!1m8!3m7!1s0x47d8b6bb6e60fdfb:0xab1ac0dbd1ce0af2!2s17+Alkerden+Ln,+Swanscombe+DA10+0EQ!3b1!8m2!3d51.4428892!4d0.2982478!16s%2Fg%2F11rp2ngfdz!3m5!1s0x47d8b78fe2750669:0xa67893a916debc8d!8m2!3d51.4428892!4d0.2982478!16s%2Fg%2F11n2d8mrgv?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
@@ -87,9 +90,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             rel="noopener noreferrer"
             className="header-location"
             title="View on Google Maps"
+            aria-label="Open Hydra Scuba Diving location in Google Maps"
           >
             {" "}
-            <img src={pin} alt="address" />{" "}
+            <img src={pin} alt="address" width={50} height={50} />{" "}
           </a>
         </div>
       </div>

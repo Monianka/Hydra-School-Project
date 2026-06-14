@@ -9,6 +9,8 @@ const CustomerConsentSchema = new mongoose.Schema({
     dob: {type: Date, required: true},
     phone: {type: String, required: true},
     agreed: {type: Boolean, required: true},
+    courseSlug: {type: String, required: true},
+    courseName: {type: String, required: true},
     signatureName: {type: String, required: true},
     token: {type: String, required: true, index: true},
     termsVersion: {type: String},

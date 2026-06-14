@@ -33,20 +33,20 @@ const Footer: React.FC = () => {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="footer-social">
-            <a href="https://www.facebook.com/HydraScubaDiving" target="_blank" rel="noopener noreferrer">
-              <img src={facbookIcon} alt="Facebook" />
+            <a href="https://www.facebook.com/HydraScubaDiving" target="_blank" rel="noopener noreferrer" aria-label="Visit Hydra Scuba Diving on Facebook">
+              <img src={facbookIcon} alt="Facebook" width={48} height={48} />
             </a>
-            <a href="https://www.instagram.com/hydra.divers/" target="_blank" rel="noopener noreferrer">
-              <img src={instagramIcon} alt="Instagram" />
+            <a href="https://www.instagram.com/hydra.divers/" target="_blank" rel="noopener noreferrer" aria-label="Visit Hydra Scuba Diving on Instagram">
+              <img src={instagramIcon} alt="Instagram" width={48} height={48} />
             </a>
-            <a href="https://www.youtube.com/@divinglens" target="_blank" rel="noopener noreferrer">
-              <img src={youtubeIcon} alt="YouTube" />
+            <a href="https://www.youtube.com/@divinglens" target="_blank" rel="noopener noreferrer" aria-label="Visit Hydra Scuba Diving on YouTube">
+              <img src={youtubeIcon} alt="YouTube" width={48} height={48} />
             </a>
           </div>
         </div>
       </div>
       <div className="footer-bottom">
-        <img src={padiLogo} alt="PADI" className="footer-padi-logo" />
+        <img src={padiLogo} alt="PADI" className="footer-padi-logo" width={1600} height={1334} />
         <p>&copy; 2024 Hydra Scuba Diving School - PADI Certified Diving School in London & Kent. {t.rights}</p>
       </div>
     </footer>

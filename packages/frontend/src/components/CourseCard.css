@@ -15,8 +15,8 @@
 @media (max-width: 600px) {
   .courses-grid {
     grid-template-columns: 1fr;
-    padding: 1rem 1.5rem;
-    gap: 1.5rem;
+    padding: 0;
+    gap: 1rem;
   }
 
   .courses-grid .course-card {

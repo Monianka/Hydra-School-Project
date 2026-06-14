@@ -7,9 +7,10 @@ import { translations } from '../translations';
 
 type CoursesProps = {
   layout?: "carousel" | "grid";
+  includeSeo?: boolean;
 };
 
-const Courses: React.FC<CoursesProps> = ({ layout = "carousel" }) => {
+const Courses: React.FC<CoursesProps> = ({ layout = "carousel", includeSeo = false }) => {
   const { language } = useLanguage();
   const t = translations[language].courses;
   const [current, setCurrent] = useState(0);
@@ -33,40 +34,42 @@ const Courses: React.FC<CoursesProps> = ({ layout = "carousel" }) => {
 
   return (
     <div>
-      <Helmet>
-        <title>
-          {language === "pl"
-            ? "Kursy Nurkowania PADI | Hydra-Scuba Diving School | Londyn, Kent"
-            : "Scuba Diving Courses | Hydra-Scuba Diving School | London & Kent"}
-        </title>
-        <meta
-          name="description"
-          content={
-            language === "pl"
-              ? "Profesjonalne kursy nurkowania PADI po polsku i angielsku w Londynie, Kent i całej Anglii. Hydra-Scuba Diving School — polska szkoła nurkowania."
-              : "PADI-certified scuba diving courses in London, Kent and across England. Beginner to professional levels. Polish and English instruction. Hydra-Scuba Diving School."
-          }
-        />
-        <link rel="canonical" href="https://hydra-scubadiving.com/courses" />
-        <meta
-          property="og:title"
-          content={
-            language === "pl"
-              ? "Kursy Nurkowania PADI | Hydra-Scuba Diving School"
-              : "Scuba Diving Courses | Hydra-Scuba Diving School"
-          }
-        />
-        <meta
-          property="og:description"
-          content={
-            language === "pl"
-              ? "Kursy nurkowania PADI w Londynie, Kent i Anglii. Po polsku i angielsku."
-              : "PADI scuba diving courses in London, Kent and England. English and Polish instruction."
-          }
-        />
-        <meta property="og:url" content="https://hydra-scubadiving.com/courses" />
-        <meta property="og:type" content="website" />
-      </Helmet>
+      {includeSeo && (
+        <Helmet>
+          <title>
+            {language === "pl"
+              ? "Kursy Nurkowania PADI | Hydra-Scuba Diving School | Londyn, Kent"
+              : "Scuba Diving Courses | Hydra-Scuba Diving School | London & Kent"}
+          </title>
+          <meta
+            name="description"
+            content={
+              language === "pl"
+                ? "Profesjonalne kursy nurkowania PADI po polsku i angielsku w Londynie, Kent i całej Anglii. Hydra-Scuba Diving School — polska szkoła nurkowania."
+                : "PADI-certified scuba diving courses in London, Kent and across England. Beginner to professional levels. Polish and English instruction. Hydra-Scuba Diving School."
+            }
+          />
+          <link rel="canonical" href="https://hydra-scubadiving.com/courses" />
+          <meta
+            property="og:title"
+            content={
+              language === "pl"
+                ? "Kursy Nurkowania PADI | Hydra-Scuba Diving School"
+                : "Scuba Diving Courses | Hydra-Scuba Diving School"
+            }
+          />
+          <meta
+            property="og:description"
+            content={
+              language === "pl"
+                ? "Kursy nurkowania PADI w Londynie, Kent i Anglii. Po polsku i angielsku."
+                : "PADI scuba diving courses in London, Kent and England. English and Polish instruction."
+            }
+          />
+          <meta property="og:url" content="https://hydra-scubadiving.com/courses" />
+          <meta property="og:type" content="website" />
+        </Helmet>
+      )}
       <div className={`courses-section-header${layout === "carousel" ? " courses-section-header-home" : ""}`}>
         <p className="courses-section-kicker">{t.sectionKicker}</p>
         <h2>{t.sectionTitle}</h2>
@@ -84,6 +87,8 @@ const Courses: React.FC<CoursesProps> = ({ layout = "carousel" }) => {
               key={course.id}
               slug={course.slug}
               image={course.image}
+              imageWidth={course.imageWidth}
+              imageHeight={course.imageHeight}
               title={course.translations[language].title}
               price={course.translations[language].price}
               duration={course.translations[language].duration}
@@ -108,6 +113,8 @@ const Courses: React.FC<CoursesProps> = ({ layout = "carousel" }) => {
                   <CourseCard
                     slug={course.slug}
                     image={course.image}
+                    imageWidth={course.imageWidth}
+                    imageHeight={course.imageHeight}
                     title={course.translations[language].title}
                     price={course.translations[language].price}
                     duration={course.translations[language].duration}

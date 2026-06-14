@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 type CourseCardProps = {
   image: string;
+  imageWidth?: number;
+  imageHeight?: number;
   title: string;
   price?: string;
   duration?: string;
@@ -16,6 +18,8 @@ type CourseCardProps = {
 
 const CourseCard: React.FC<CourseCardProps> = ({
   image,
+  imageWidth,
+  imageHeight,
   title,
   price,
   duration,
@@ -32,7 +36,15 @@ const CourseCard: React.FC<CourseCardProps> = ({
 
   return (
     <div className="course-card">
-      <img src={image} alt={title} className="course-card-image" />
+      <img
+        src={image}
+        alt={title}
+        className="course-card-image"
+        loading="lazy"
+        decoding="async"
+        width={imageWidth}
+        height={imageHeight}
+      />
       <h3 className="course-card-title">{title}</h3>
       <p className="course-card-description">{description}</p>
       <div className="course-card-bottom">
