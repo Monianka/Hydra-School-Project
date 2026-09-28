@@ -1,3 +1,5 @@
+import { consentTerms } from "./consentTerms";
+
 export const translations = {
   en: {
     nav: {
@@ -73,6 +75,29 @@ export const translations = {
       experienceDesc: "Years of professional diving experience and a passion for the underwater world — we bring it all to every lesson.",
       adventure: "Adventure",
       adventureDesc: "Every dive is a new discovery. We take you to the most beautiful dive sites in the UK and beyond."
+    },
+    consent: {
+      missingToken: "Missing consent link token.",
+      invalidToken: "This consent link is invalid or expired.",
+      genericError: "Something went wrong. Please check the form and try again.",
+      loading: "Loading consent data...",
+      invalidLink: "This consent link is not valid.",
+      success: "Thank you. Your consent form has been submitted.",
+      title: "Hydra Scuba Diving School Customer Consent",
+      intro: "Please complete your details and read the terms and conditions before submitting.",
+      firstName: "First name",
+      lastName: "Last name",
+      email: "Email",
+      dob: "Date of birth",
+      phone: "Phone",
+      course: "Select course",
+      coursePlaceholder: "Select a course",
+      signatureName: "Signature name",
+      termsTitle: "Terms and conditions",
+      termsSections: consentTerms.en,
+      agree: "I have read and agree to the consent terms.",
+      submitting: "Submitting...",
+      submit: "Submit consent"
     }
   },
   pl: {
@@ -149,6 +174,29 @@ export const translations = {
       experienceDesc: "Lata profesjonalnego doświadczenia i pasja do podwodnego świata — wnosimy to wszystko do każdej lekcji.",
       adventure: "Przygoda",
       adventureDesc: "Każde nurkowanie to nowe odkrycie. Zabieram Cię na najpiękniejsze miejsca nurkowe w Wielkiej Brytanii i nie tylko."
+    },
+    consent: {
+      missingToken: "Brakuje tokenu linku zgody.",
+      invalidToken: "Ten link zgody jest nieprawidłowy albo wygasł.",
+      genericError: "Coś poszło nie tak. Sprawdź formularz i spróbuj ponownie.",
+      loading: "Ładowanie formularza zgody...",
+      invalidLink: "Ten link zgody nie jest prawidłowy.",
+      success: "Dziękujemy. Formularz zgody został wysłany.",
+      title: "Zgoda klienta szkoły nurkowania Hydra",
+      intro: "Uzupełnij swoje dane i przeczytaj regulamin przed wysłaniem formularza.",
+      firstName: "Imię",
+      lastName: "Nazwisko",
+      email: "Email",
+      dob: "Data urodzenia",
+      phone: "Telefon",
+      course: "Wybierz kurs",
+      coursePlaceholder: "Wybierz kurs",
+      signatureName: "Imię i nazwisko jako podpis",
+      termsTitle: "Regulamin i warunki",
+      termsSections: consentTerms.pl,
+      agree: "Przeczytałem/przeczytałam i akceptuję warunki zgody.",
+      submitting: "Wysyłanie...",
+      submit: "Wyślij zgodę"
     }
   }
 };

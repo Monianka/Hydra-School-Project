@@ -8,6 +8,11 @@ import React from 'react';
 import CourseDetail from '../pages/CourseDetail';
 import DiveLocationsPage from '../pages/DiveLocationsPage';
 import DiveLocationDetail from '../pages/DiveLocationDetail';
+import CustomerConsent from '../pages/CustomerConsent';
+import AdminLogin from '../pages/AdminLogin';
+import AdminDashboard from '../pages/AdminDashboard';
+import ProtectedAdminRoute from './ProtectedAdminRoute';
+import AdminLayout from '../components/admin/AdminLayout';
 
 const LegacyLanguageRedirect = () => {
   const location = useLocation();
@@ -30,6 +35,22 @@ const AppRoutes = () => {
         <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route path="/dive-locations" element={<DiveLocationsPage />} />
         <Route path="/dive-locations/:slug" element={<DiveLocationDetail />} />
+        <Route path= "/customer-consent/:token" element={<CustomerConsent />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route
+          path="/admin"
+          element={
+            <ProtectedAdminRoute>
+              <AdminLayout />
+            </ProtectedAdminRoute>
+          }
+        >
+          <Route index element={<Navigate to="dashboard" replace />} />
+        <Route
+        path = "dashboard"
+        element = {<AdminDashboard/>}
+        />
+        </Route>
       </Routes>
     </Router>
   );

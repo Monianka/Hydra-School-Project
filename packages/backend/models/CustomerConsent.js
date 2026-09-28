@@ -12,13 +12,18 @@ const CustomerConsentSchema = new mongoose.Schema({
     courseSlug: {type: String, required: true},
     courseName: {type: String, required: true},
     signatureName: {type: String, required: true},
-    token: {type: String, required: true, index: true},
+    inviteTokenId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'InviteToken',
+    required: true,
+    index: true,
+},
     termsVersion: {type: String},
     signedAt: {type: Date},
     ip: {type: String},
 }, {timestamps: true});
 
-CustomerConsentSchema.index({token: 1});
+CustomerConsentSchema.index({inviteTokenId: 1});
 CustomerConsentSchema.index({signedAt: -1});
 
 module.exports = mongoose.model('CustomerConsent', CustomerConsentSchema);
